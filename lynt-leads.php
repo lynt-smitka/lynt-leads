@@ -348,7 +348,7 @@ if (!class_exists("Lynt_Leads")) {
   <table class="form-table">
   <tr>
   <th scope="row"><label for="lynt_leads_ga_account">GA Account</label></th>
-  <td><input type="text" id="lynt_leads_ga_account" name="lynt_leads_ga_account" value="<?php echo get_option('lynt_leads_ga_account');
+  <td><input type="text" id="lynt_leads_ga_account" name="lynt_leads_ga_account" placeholder="UA-xxxxxxxx-x" value="<?php echo get_option('lynt_leads_ga_account');
       ?>" /></td>
   </tr>
   </table>
@@ -377,7 +377,6 @@ if (!class_exists("Lynt_Leads")) {
       
        if ($submission) {
         $data = $submission -> get_posted_data();
-         print_r($data);
          if (!empty($data['lynt_tag'])) {
           
           $data['post_id'] = intval($data['_wpcf7_container_post']);
