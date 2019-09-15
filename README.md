@@ -42,7 +42,7 @@ Pokud se vaše formulářové políčko s e-mailem jmenuje "your-email" a formul
 [hidden lynt_mail "your-email"]
 ```
 
-##Pro vývojáře
+## Pro vývojáře
 Stavy poptávky jsou definovány PHP polem:
 
 ```
@@ -56,7 +56,7 @@ $statuses =  array(
    );
 ```
 
-##TODO
+## TODO
 - definice vlastních stavů pomocí hooku
 - dodělání možnosti překladu
  
