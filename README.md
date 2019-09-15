@@ -15,6 +15,8 @@ Výchozí stavy:
 - Neúspěšný Lead / lost (finální stav)
 - Úspěšný Lead / win (finální stav s nastavením hodnoty)
 
+![ScreenShot Leads List](https://i.imgur.com/CISdZ51.png)
+
 Aktuálně podporuje kontaktní formulář pluginu [Contact Form 7](https://cs.wordpress.org/plugins/contact-form-7/).
 
 ## Nastavení
@@ -27,6 +29,8 @@ Při každé změně stavu se posílá událost v následujícím formátu:
 - Label: ID poptávky
 - Value: hodnota nastavená ve stavu "Úspěšný Lead"
 
+![ScreenShot Value](https://i.imgur.com/rZ7VmWa.png)
+
 
 ## Integrace s Contact Form 7
 Aby byl kontaktní formuář zachytáván, je třeba do formuláře doplnit skryté formulářové pole lynt_tag s názvem kontaktního formuláře (např. Poptávka, Podpora atd.). Lze tak odlišit několik různých formulářu na webu.
@@ -35,12 +39,15 @@ Aby byl kontaktní formuář zachytáván, je třeba do formuláře doplnit skry
 
 Dále lze použít další 2 nepovinná pole pro párování e-mailové adresy a jména odesílatele s konkrétním polem formuláře pro větší přehlednost seznamu poptávek.
 
-Pokud se vaše formulářové políčko s e-mailem jmenuje "your-email" a formulářové políčko se jménem "your-name", bude mapování vypadat následovně:
+Pokud se vaše formulářové políčko s e-mailem jmenuje "email" a formulářové políčko se jménem "jmeno", bude mapování vypadat následovně:
 
 ```
-[hidden lynt_name "your-name"]
-[hidden lynt_mail "your-email"]
+[hidden lynt_name "jmeno"]
+[hidden lynt_mail "email"]
 ```
+
+![ScreenShot CF7](https://i.imgur.com/oOp4YPT.png)
+
 
 ## Pro vývojáře
 Stavy poptávky jsou definovány PHP polem:
